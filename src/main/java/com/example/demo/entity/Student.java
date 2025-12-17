@@ -1,11 +1,11 @@
 package com.example.aiml.entity;
 
 public class Student {
-    private int id ;
+    private long id ;
     private String name;
     private String email;
     
-    public void setId(int id){
+    public void setId(long id){
         this.id=id;
 
     }
@@ -26,7 +26,7 @@ public class Student {
         this.email = email;
     }
     
-    public Student(int id, String name, String email) {
+    public Student(long id, String name, String email) {
         this.id = id;
         this.name = name;
         this.email = email;
