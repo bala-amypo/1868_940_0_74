@@ -1,6 +1,9 @@
 package com.example.aiml.entity;
-
+import jakarta.persistence.*;
+@Enitity
+@table(name=students)
 public class Student {
+    @Id
     private long id ;
     private String name;
     private String email;
