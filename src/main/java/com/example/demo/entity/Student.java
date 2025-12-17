@@ -1,7 +1,5 @@
 package com.example.aiml.entity;
 import jakarta.persistence.*;
-@Enitity
-@table(name=students)
 public class Student {
     private long id ;
     private String name;
