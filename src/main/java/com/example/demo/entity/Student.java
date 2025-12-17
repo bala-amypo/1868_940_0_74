@@ -1,13 +1,19 @@
 package com.example.aiml.entity;
-import java.time.LocalDate;
+
+
 public class Student {
-    private int id;
+    private int id ;
     private String name;
-    public void setId(int id) {
-        this.id = id;
+    private String email;
+    
+    
+    public void setId(int id){
+        this.id=id;
+
     }
     public int getId() {
         return id;
+        
     }
     public String getName() {
         return name;
@@ -15,10 +21,21 @@ public class Student {
     public void setName(String name) {
         this.name = name;
     }
-
-    public Student(int id, String name) {
+    public String getEmail() {
+        return email;
+    }
+    public void setEmail(String email) {
+        this.email = email;
+    }
+    
+    public Student(int id, String name, String email) {
         this.id = id;
         this.name = name;
+        this.email = email;
        
     }
+    public Student() {
+    }
+
+
 }
