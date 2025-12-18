@@ -1,3 +1,4 @@
+
 package com.example.demo.config;
 
 import io.swagger.v3.oas.models.OpenAPI;
@@ -12,8 +13,9 @@ public class OpenApiConfig {
     @Bean
     public OpenAPI customOpenAPI() {
         return new OpenAPI()
+                // You need to change the port as per your server
                 .servers(List.of(
-                        new Server().url("https://9318.pro604cr.amypo.ai/")
+                        new Server().url("")
                 ));
-    }
+        }
 }

@@ -1,3 +1,4 @@
+
 package com.example.demo.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,12 +11,14 @@ import com.example.demo.service.StudentService;
 
 @RestController
 public class StudentController {
-
     @Autowired
-    private StudentService studentService;
+    StudentService studentService;
 
     @PostMapping("/postdata")
-    public Student postData(@RequestBody Student student) {
+    public Student postdata(@RequestBody Student student){
         return studentService.saveStudent(student);
     }
+    
+    
+
 }
