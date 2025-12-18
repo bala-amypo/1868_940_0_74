@@ -10,14 +10,12 @@ import com.example.demo.service.StudentService;
 
 @RestController
 public class StudentController {
+
     @Autowired
-    StudentService studentService;
+    private StudentService studentService;
 
     @PostMapping("/postdata")
-    public Student postdata(@RequestBody Student student){
+    public Student postData(@RequestBody Student student) {
         return studentService.saveStudent(student);
     }
-    
-    
-
 }
